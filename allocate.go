@@ -342,11 +342,14 @@ func findExecPath() string {
 		"/usr/bin/google-chrome",
 
 		// Windows
-		"chrome",
-		"chrome.exe", // in case PATHEXT is misconfigured
-		`C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`,
-		`C:\Program Files\Google\Chrome\Application\chrome.exe`,
-		filepath.Join(os.Getenv("USERPROFILE"), `AppData\Local\Google\Chrome\Application\chrome.exe`),
+		"msedge",
+		"msedge.exe",
+		`C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe`, 
+		//"chrome",
+		//"chrome.exe", // in case PATHEXT is misconfigured
+		//`C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`,
+		//`C:\Program Files\Google\Chrome\Application\chrome.exe`,
+		//filepath.Join(os.Getenv("USERPROFILE"), `AppData\Local\Google\Chrome\Application\chrome.exe`),
 
 		// Mac
 		"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
